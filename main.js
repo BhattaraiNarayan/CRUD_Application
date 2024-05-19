@@ -66,7 +66,7 @@ let createTasks = () => {
 let deleteTask = (e) => {
   e.parentElement.parentElement.remove();
   myData.splice(e.parentElement.parentElement.id, 1);
-  localStorage.setItem("data", JSON.stringify(myData));
+  localStorage.setItem("myData", JSON.stringify(myData));
   console.log(myData);
 };
 
